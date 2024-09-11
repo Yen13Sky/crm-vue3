@@ -22,7 +22,7 @@ export default {
   actions: {
     async login ({ commit, dispatch }, user) {
       try {
-        const url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMzbVaVwkzCkB-lAexpTubYxANFDAtj_I'
+        const url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=API-KEY'
 
         const { data } = await axios.post(url, { ...user, returnSecureToken: true })
         commit('setToken', data.idToken)
