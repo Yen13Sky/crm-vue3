@@ -1,0 +1,129 @@
+/*Шрифт по умолчанию*/
+$fontFamily: "MontserratRegular", sans-serif;
+$fontSize: 16;
+
+/*--------------------*/
+/*Иконочные шрифты*/
+
+/*--------------------*/
+/*ПЕРЕМЕННЫЕ*/
+$maxWidth: 1440px;
+$maxWidthContainer: 1270;
+$mainColor:#505050;
+$darkBlue: #1d3557;
+$blue: #457b9d;
+$mediumBlue: #a8dadc;
+$background: #f1faee;
+$red: #e63946;
+$white: #fefefe;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+/*--------------------*/
+/*Подключение файлов стилей*/
+@import 'fonts';
+@import "icons";
+@import "blocks/header";
+@import "blocks/auth";
+@import "blocks/home";
+@import "blocks/modal";
+@import "blocks/form";
+@import "blocks/requests";
+@import "blocks/loader";
+@import "blocks/questions";
+@import "blocks/sidebar";
+
+
+
+/*--------------------*/
+
+/*ОСНОВНАЯ СЕТКА*/
+body{
+  position: relative;
+  font-family: $fontFamily ;
+  color: $mainColor;
+  font-size: $fontSize + px;
+  background-color: $background;
+  padding: 0;
+  &._lock{
+    overflow: hidden;
+  }
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded{}
+
+}
+
+footer{
+  margin: 0 0 auto;
+}
+/*--------------------*/
+/*ОСНОВНАЯ СЕТКА*/
+.container{
+  position: relative;
+  max-width: $maxWidthContainer + px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*--------------------*/
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer; background: transparent;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+.card{
+  min-width: 80%;
+  position: relative;
+  background-color: $darkBlue;
+  border-radius: 25px;
+  margin: 25px 0;
+  color: $white;
+
+}
+.title{
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 120%;
+  font-weight: 500;
+  margin: 15px 0 10px 0;
+}
+.main-row{
+  background: $white;
+  width: 100%;
+}
+.btn{
+  color: $darkBlue;
+  padding: 10px 45px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 120%;
+  text-transform: uppercase;
+  border: 1px solid $darkBlue;
+  transition: all 0.4s ease 0s;
+
+}

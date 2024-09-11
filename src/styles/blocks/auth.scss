@@ -1,0 +1,117 @@
+.card-white{
+  width: 450px;
+  margin: 20px 0;
+  background: $white;
+  border-radius: 5px;
+}
+.auth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-title{
+  color: $darkBlue;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 15px 0 20px 0;
+}
+.auth-label{
+  color: $darkBlue;
+  text-transform: uppercase;
+  line-height: 120%;
+  font-weight: 600;
+  margin: 0 0 7px 0;
+}
+.auth-row{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 15px auto;
+}
+.input-row{
+  position: relative;
+  width: 100%;
+}
+.auth-input {
+
+  border: 1px solid $blue;
+  width: 100%;
+  padding: 5px 15px;
+  color: $darkBlue;
+  font-size: 17px;
+
+  &:focus {
+    border: 1px solid $darkBlue;
+
+  }
+}
+.auth-input.auth-input-error{
+  border: 1px solid $red !important;
+}
+.auth-error{
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 500;
+  color: $red;
+  margin: 5px 0 0 0;
+}
+
+
+.input-icon{
+  position: absolute;
+  font-size: 1.5em;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 25%);
+  color: $darkBlue;
+  cursor: pointer;
+  &:hover{
+    color: $blue;
+
+  }
+}
+.input-icon.icon-hide{
+  cursor: none;
+  pointer-events: none;
+}
+.icon-error{
+  color: $red;
+}
+.auth-btn{
+  color: $darkBlue;
+  padding: 10px 45px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 120%;
+  text-transform: uppercase;
+  border: 1px solid $darkBlue;
+  transition: all 0.4s ease 0s;
+  margin: 10px 0;
+  &:hover{
+    color: $white;
+    background: $blue;
+    border: 1px solid $blue;
+  }
+
+}
+.error-row{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.error{
+  color: $red;
+}
+.warning{
+  color: $darkBlue;
+}
+.error-text{
+  color: $red;
+}
+.warning-text{
+  color: $darkBlue;
+}
